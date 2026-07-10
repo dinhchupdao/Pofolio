@@ -8,6 +8,7 @@ export interface ContactInfo {
   phone: string;
   email: string;
   address: string;
+  addressLink?: string;
 }
 
 export interface SocialLinks {
@@ -62,7 +63,8 @@ export const personalInfo: PersonalInfo = {
   contact: {
     phone: "090 123 4567", // Thay số điện thoại thật ở đây
     email: "toquocvinhmc@gmail.com", // Email đã được tối ưu từ thông tin của bạn
-    address: "Quận 1, Thành phố Hồ Chí Minh" // Thay địa chỉ ở đây
+    address: "Quận 1, Thành phố Hồ Chí Minh", // Thay địa chỉ ở đây
+    addressLink: "https://www.google.com/maps/place/H%C3%A0ng+D%C6%B0%C6%A1ng+Qu%C3%A1n+Qu%E1%BA%ADn+1/@10.7802184,106.6955046,5161m/data=!3m1!1e3!4m10!1m2!2m1!1zUXXhuq1uIDE!3m6!1s0x3168532aa82ab9f1:0x5f471336cc2918b1!8m2!3d10.773527!4d106.7053407!15sCghRdeG6rW4gMVoKIghxdeG6rW4gMZIBCnJlc3RhdXJhbnTgAQA!16s%2Fg%2F1pzpkw6tp?entry=ttu&g_ep=EgoyMDI2MDcwNy4wIKXMDSoASAFQAw%3D%3D"
   },
   socials: {
     facebook: "https://facebook.com/toquocvinh", // Thay link facebook thật

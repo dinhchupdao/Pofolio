@@ -398,9 +398,20 @@ export default function App() {
                   </div>
                   <div>
                     <p className="font-mono text-[10px] text-zinc-500 uppercase">Khu Vực</p>
-                    <p className="text-sm font-semibold text-white">
-                      {personalInfo.contact.address}
-                    </p>
+                    {personalInfo.contact.addressLink ? (
+                      <a
+                        href={personalInfo.contact.addressLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-white hover:text-lime-400 transition-colors"
+                      >
+                        {personalInfo.contact.address}
+                      </a>
+                    ) : (
+                      <p className="text-sm font-semibold text-white">
+                        {personalInfo.contact.address}
+                      </p>
+                    )}
                   </div>
                 </div>
 
@@ -761,9 +772,20 @@ export default function App() {
                   </div>
                   <div>
                     <h4 className="font-mono text-[10px] text-zinc-500 uppercase">Khu vực làm việc</h4>
-                    <p className="text-base font-semibold text-white">
-                      {personalInfo.contact.address}
-                    </p>
+                    {personalInfo.contact.addressLink ? (
+                      <a
+                        href={personalInfo.contact.addressLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-base font-semibold text-white hover:text-lime-400 transition-colors"
+                      >
+                        {personalInfo.contact.address}
+                      </a>
+                    ) : (
+                      <p className="text-base font-semibold text-white">
+                        {personalInfo.contact.address}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
